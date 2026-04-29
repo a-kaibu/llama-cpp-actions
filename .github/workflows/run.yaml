@@ -38,7 +38,7 @@ jobs:
 
       - name: Start llama-server
         run: |
-          /tmp/llama.cpp/bin/llama-server \
+          /tmp/llama.cpp/llama-server \
             -hf "${{ env.LLAMA_CPP_HF_MODEL }}" \
             --host 127.0.0.1 \
             --port 8080 \
